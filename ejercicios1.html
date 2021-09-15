@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    class Pelicula {
+        constructor(id, titulo, director, anio, paises, generos, calificacion) {
+            this.id = id;
+            this.titulo = titulo;
+            this.director = director;
+            this.anio = anio;
+            this.paises = paises;
+            this.generos = generos;
+            this.calificacion = calificacion;
+            this.validarIMDB(id);
+            this.validarDirector(director, 50);
+
+        }
+        validarCadena(valor) {
+            if (!valor) return console.warn("no ingresaste ningun valor");
+
+            if (typeof valor !== 'string') return console.error("no ingresaste una cadena ");
+
+            return true;
+
+        }
+        validarIMDB(a) {
+            if (this.validarCadena(a)) {
+                if (!(/^([A-Za-z]{2}([0-9]){7}$)/.test(a))) {
+                    return console.error(`IMDB id ${a} no es vlaido debe tener 9 caracteres los dos primeros letras y los 7 resatntes numeros`);
+                }
+            }
+        }
+        validarTamañoCadena(cadena, maximo) {
+            if (cadena.length > maximo) {
+                console.error(`el tamnio del director ${cadena.length} excede los caracteres permitido ${maximo} `);
+            }
+        }
+        validarDirector(director, maximo) {
+            if (this.validarCadena(director)) {
+                this.validarTamañoCadena(director, maximo);
+            }
+        }
+
+        Listargeneros = () => {
+
+        }
+
+    }
+
+    let ScaryMovie = new Pelicula("aa2123213", "callese don perro", "sddasdasdas");
+    console.log(ScaryMovie);
+</script>
+
+<body>
+    <h1>Ejercicios de JavaScript Parte 1</h1>
+</body>
+
+</html>

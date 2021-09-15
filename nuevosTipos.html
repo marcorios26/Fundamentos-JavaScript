@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUevos tipos de datos</title>
+</head>
+
+<body>
+    <h1>Nuevos tipos de dato </h1>
+    <ul>
+        <li>Symbol</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <script>
+        //&&&&&&&&& SYMBOLS %%%%%%%%%%%
+
+        let id = Symbol();
+        let id2 = Symbol();
+        (id === id2) ? console.log(true): console.log(false);
+
+        let NOMBRE = Symbol()
+
+        let NOMBRE2 = Symbol("NOmbre")
+        let SALUDAR = Symbol();
+        let SALUDAR2 = Symbol();
+        persona = {
+            [NOMBRE]: "marco"
+
+        }
+        persona.NOMBRE = "marco antonio"
+        persona.APELLIDO = "RIOS RAMOS"
+        console.log(persona);
+
+        persona[SALUDAR] = function() {
+            console.log("hola !!!");
+        }
+        console.log(persona);
+
+        persona[SALUDAR]();
+
+        for (let propiedad in persona) {
+            console.log(propiedad);
+            console.log(persona[propiedad]);
+        }
+
+        console.log(Object.getOwnPropertySymbols(persona));
+
+        //SETS
+    </script>
+</body>
+
+</html>

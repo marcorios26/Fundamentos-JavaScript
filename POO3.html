@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    //EXPRESIONES REGULARES
+    let cadena = "Lorem ipsum dolor sit Lorem amet Lorem consectetur adipisicing elit. Sapiente quasi earum illo nulla minima alias tenetur? Laboriosam illo magni vitae voluptatum, in, qui mollitia quasi explicabo unde laborum repellendus enim";
+    let expReg1 = new RegExp("Lorem", "ig");
+    let expReg2 = /lorem{1,2}/i;
+
+    console.log(expReg1.test(cadena));
+    console.log(expReg1.exec(cadena));
+
+    console.log(expReg2.test(cadena));
+
+    //funcion anonima autoejecutable
+    (function(d, w, c) {
+        console.log("mi pimer IIFE")
+        console.log(d);
+        console.dir(d);
+        c.log("soy un console")
+    })(document, window, console);
+    (function() {
+        console.log("mi segunda IIFE");
+    })()
+</script>
+
+<body>
+
+</body>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quasi earum illo nulla minima alias tenetur? Laboriosam illo magni vitae voluptatum, in, qui mollitia quasi explicabo unde laborum repellendus enim.</p>
+
+</html>

@@ -1,0 +1,17 @@
+tipos de datos en javascript
+
+primitivos:
+	string
+	number
+	boolean
+	null
+	undefined
+	NaN
+compuestos:
+	object={}
+	array=[]
+	funtion=(){}
+	class{}
+	etc
+
+

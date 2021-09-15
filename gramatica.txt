@@ -1,0 +1,11 @@
+snake_case --> archivos
+UPPER_CASE --> constantes
+UpperCamelCase --> clases
+lowerCamelCase --> objetos,primitivos,funciones,instancia
+
+ordenamiento de codigo
+
+1 importacion de modulos
+2 declaracion de variables
+3 declaracion de funciones
+4 ejecucion de codigo

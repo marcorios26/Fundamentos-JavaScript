@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    /*
+                                                                                                                //parametros REST
+
+                                                                                                                function sumar(a, b, ...c) {
+                                                                                                                    let resultado = a + b;
+                                                                                                                    c.forEach(function(n) {
+                                                                                                                        resultado += n;
+                                                                                                                    })
+                                                                                                                    return resultado;
+                                                                                                                }
+                                                                                                                console.log(sumar(1, 2, 5, 6));
+
+                                                                                                                //SPREAD operator ..parametor de propagacion
+
+                                                                                                                const arreglo1 = [1, 2, 3, 4, 5];
+                                                                                                                arreglo2 = [6, 7, 8, 9, 0];
+                                                                                                                console.log(arreglo1, arreglo2);
+                                                                                                                const arreglo3 = [...arreglo1, ...arreglo2];
+                                                                                                                console.log(arreglo3)
+
+                             //arrow functions
+                                  //funcion declarada                                                                              */
+    function saludar() {
+        console.log("hola como estas");
+    }
+
+    saludar();
+
+    //funcion expresada
+    const saludar2 = function() {
+        console.log("bien gracias y tu?");
+    }
+    saludar2();
+
+    const respuesta = () => {
+        console.log("tambien bien ");
+    }
+    respuesta();
+
+    const respuesta2 = () => console.log("que bueno :)");
+
+    respuesta2();
+
+    const sumar = (a, b) => a + b;
+    console.log(sumar(4, 5));
+    const saludo = nombre => console.log(`hola ${nombre}`);
+    saludo("mandy");
+
+
+    const numeros = [1, 2, 3, 4, 5, 6];
+    numeros.forEach((elemento, index) => console.log(`el elemento ${elemento} esta en la posicion ${index}`))
+</script>
+
+<body>
+    <h1>parametros REST</h1>
+</body>
+
+</html>

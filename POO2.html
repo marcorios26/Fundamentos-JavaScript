@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    /*
+                                                                                                                                                                    console.log(console);
+                                                                                                                                                                    console.error("hay un error");
+                                                                                                                                                                    console.warn("esto es un warn");
+                                                                                                                                                                    console.info("esto es un info");
+
+                                                                                                                                                                    let nombre = "marco"
+                                                                                                                                                                    let apellido = "rios"
+                                                                                                                                                                    let edad = 25;
+
+                                                                                                                                                                    console.log("hola mi nombre es %s %s y tengo %d anios", nombre, apellido, edad);
+                                                                                                                                                                    console.clear();
+                                                                                                                                                                    console.log(window);
+                                                                                                                                                                    console.log(document); //elemto html
+                                                                                                                                                                    console.dir(document); //elemento como objeto
+                                                                                                                                                                    console.clear();
+                                                                                                                                                                    console.group("Cursos de JavaScript en YouTube");
+                                                                                                                                                                    console.log("curso de javascript");
+                                                                                                                                                                    console.log("react");
+                                                                                                                                                                    console.log("Pwas");
+                                                                                                                                                                    console.groupEnd();
+                                                                                                                                                                    console.clear();
+                                                                                                                                                                    console.table(Object.entries(console).sort());
+                                                                                                                                                                    console.clear();
+                                                                                                                                                                    const arreglo = [1, 2, 3, 4, 5]
+                                                                                                                                                                    const vocales = ["a,", "e", "i", "o", "u"]
+                                                                                                                                                                    console.table(arreglo);
+                                                                                                                                                                    console.table(vocales);
+                                                                                                                                                                    console.clear();
+                                                                                                                                                                    const perro = {
+                                                                                                                                                                        nombre: "oso",
+                                                                                                                                                                        raza: "grande",
+                                                                                                                                                                        edad: 5
+                                                                                                                                                                    }
+                                                                                                                                                                    console.table(perro);
+                                                                                                                                                                    console.clear();
+                                                                                                                                                                    console.time("tiempo");
+                                                                                                                                                                    const arreglogrande = Array(1000000);
+
+                                                                                                                                                                    for (let i = 0; i < arreglogrande.length; i++) {
+                                                                                                                                                                        arreglogrande[i] = i;
+                                                                                                                                                                    }
+                                                                                                                                                                    console.timeEnd("tiempo");
+                                                                                                                                                                    //console.table(arreglogrande);
+                                                                                                                                                                    console.clear()
+                                                                                                                                                                    for (let i = 0; i <= 100; i++) {
+                                                                                                                                                                        console.count("para el ciclo for");
+                                                                                                                                                                        console.log(i);
+                                                                                                                                                                    }
+                                                                                                                                                                    console.clear();
+                                                                                                                                                                    //pruebas unitarias con assert
+                                                                                                                                                                    let x = 3;
+                                                                                                                                                                    y = 2;
+                                                                                                                                                                    pruebaXY = "se espera que x sea siempre menor que y";
+                                                                                                                                                                    
+                                                                                                                                                                    console.assert(x < y, {
+                                                                                                                                                                        x,
+                                                                                                                                                                        y,
+                                                                                                                                                                        pruebaXY
+                                                                                                                                                                    });*/
+    /*console.log(Date());
+    let fecha = new Date();
+    console.log(fecha);
+    console.log(fecha.getDate()); //dia del mes
+    console.log(fecha.getDay()); //numero del dia 0:dom,1:lun,2:mart...
+    console.log(fecha.getMonth()); //numero del mes 0 enero, 1 febrero...
+    console.log(fecha.getFullYear()); //devuelve el anio
+    console.log(fecha.getHours()); //hora 
+    console.log(fecha.getMinutes());
+    console.log(fecha.getSeconds());
+    console.log(fecha.getMilliseconds());
+    console.log(fecha.toDateString());
+    console.log(fecha.toLocaleString());
+    console.log(fecha.getTimezoneOffset());
+    console.log(fecha.getUTCDate());
+    console.log(fecha.getUTCHours());
+    let cumpleMarco = new Date(1995, 5, 26);
+    console.log(cumpleMarco);*/
+
+
+    /*objeto Math
+
+    console.log(Math.E * 1);
+    console.log(Math.pow(4, 2));
+    console.log(Math.sign(2.3));
+    console.log(Math.random());
+    console.log(Math.round(Math.random() */
+
+    /*corto circuito
+    corto circuito OR > cuando el valor de la izquierda
+    en la expresion simepre pueda validar a true, es el 
+    valor que cargara por defecto. 
+    corto circuito AND > cuando el valor de la izquiersa en la expresion siempre 
+    puede validade a false, es el valor que se cargara por defecto
+
+    const saludar = nombre => {
+        nombre = nombre || "sonia"
+        console.log(`hola ${nombre}`);
+    }
+    saludar("marco");
+    saludar(0);
+    const saludar2 = nombre => {
+        nombre = nombre && "sonia"
+        console.log(`hola ${nombre}`);
+    }
+    saludar2("marco");
+    saludar2(0);*/
+    //alert("hola")
+    //confirm("desea salir")
+    //prompt("aviso que permite guardar una variable");
+
+    let alerta = alert("hola")
+    confirmacion = confirm("desea salir")
+    aviso = prompt("valor");
+
+    console.log(alerta);
+    console.log(confirmacion);
+    console.log(aviso);
+
+    const reusltado = (aviso === "hola") ? "si" : "no";
+    console.log(reusltado);
+</script>
+
+<body>
+
+</body>
+
+</html>

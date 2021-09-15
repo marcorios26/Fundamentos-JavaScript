@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    /* break and continue
+                                                                                    let arreglo = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+                                                                                    for (let i = 0; i < arreglo.length; i++) {
+                                                                                        if (i === 5) {
+                                                                                            break;
+                                                                                        }
+                                                                                        console.log(arreglo[i]);
+                                                                                    }
+                                                                                    for (let i = 0; i < arreglo.length; i++) {
+                                                                                        if (arreglo[i] % 2 === 0) {
+                                                                                            continue;
+                                                                                        }
+                                                                                        console.log(arreglo[i]);
+                                                                                    }*/
+    /*destructuracion
+    const numeros = [1, 2, 3];
+    const [uno, dos, tres] = numeros;
+    console.log(uno, dos, tres);
+
+
+    const persona = {
+        nombre: "juan",
+        apellido: "rios",
+        edad: 24
+    }
+    let {
+        nombre,
+        apellido,
+        edad
+    } = persona;
+    console.log(nombre, apellido, edad);
+    console.log(persona.nombre, persona.apellido, persona.edad);
+    console.log(Object.values(persona));*/
+
+    //objetos literales (nueva forma de escribir atributos y metodos)
+
+    let nombre = "pilla"
+    edad = 1;
+
+    const gato = {
+        nombre: nombre,
+        edad: edad,
+        maullar: function() {
+            console.log("miau miau..");
+        }
+    }
+    console.log(gato);
+    gato.maullar();
+
+    const cat = {
+        nombre,
+        edad,
+        hablar() {
+            console.log("miau miau miau!!")
+        }
+    }
+    cat.hablar();
+</script>
+
+<body>
+    <h1>hola mundo</h1>
+</body>
+
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos JavaScript</title>
+
+</head>
+
+<body>
+    <div id="sitio">mi sistio web</div>
+    <h1>Fundamentos JavaScript</h1>
+    <script>
+        function esteEsUnaFuncion(caca) {
+            console.log(caca);
+        }
+        esteEsUnaFuncion("hola");
+
+        function unaFuncionQueDevuleveValor() {
+            return "devuelve una cadena";
+        }
+        console.log(unaFuncionQueDevuleveValor());
+
+        function saludar(nombre, edad, genero) {
+            console.log(`mis datos son los siguientes: 
+            mi nombre es: ${nombre}
+            mi edad es: ${edad}
+            mi genero es:${genero}`);
+        }
+        saludar("marco", 25, "masculino");
+
+        //functiones expresadas
+        //funcion anonima
+
+        const funcionExpresa = function() {
+            console.log(`este es una funcion expresada es decir una
+             funcion que es asignada como valor a una varaible`);
+        };
+        funcionExpresa();
+
+        //arreglos
+        let arreglo = ["a", "b", [1, 2, 3, [5, 6, 7]]];
+        console.log(arreglo[2][3][0]);
+
+        //introduciendo con arrayof
+        const arreglo2 = Array.of(1, 2, 3);
+        //fill
+        const d = Array(100).fill("hola");
+        //push and pop
+        const colores = ["rojo", "amarillo", "verde"];
+        //colores.push("negro", "blanco");
+        /*console.log(colores);
+        colores.pop();
+        console.log(colores);
+        colores.length = 0;
+        console.log(colores);
+        // utilizando forEach
+        colores.forEach(function(elemento, index) {
+            console.log(`este es el elemento:${elemento} y su posicion es: ${index}`);
+        })*/
+        // OBJETOS
+        const objeto = {
+            nombre: "marco",
+            edad: 25,
+            profesion: "Ing software",
+            contacto: {
+                email: "riosmar026@gmail.com",
+                phoneNUmber: 77752716
+            },
+            saludar: function() {
+                console.log("hola");
+            },
+            decirNombre: function() {
+                console.log(`hola me llamo ${this.nombre}`);
+            }
+
+
+        }
+        console.log(objeto);
+        objeto.saludar();
+        objeto.decirNombre();
+
+        console.log(Object.keys(objeto));
+        console.log(Object.values(objeto));
+        console.log(objeto.hasOwnProperty("nombre"));
+        console.log(objeto.hasOwnProperty("dd"));
+    </script>
+    <style>
+        color {
+            font-size: large;
+        }
+    </style>
+
+
+</body>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex itaque reprehenderit tempore nihil! Libero, velit iusto. Veniam facilis magni eum eligendi consectetur deserunt magnam. Natus facilis asperiores necessitatibus sunt quis!</p>
+<ul>
+    <li>folclore</li>
+    <li>rock</li>
+    <li>punk</li>
+    <li>regueton</li>
+</ul>
+
+
+</html>

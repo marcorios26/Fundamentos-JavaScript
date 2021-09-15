@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de JavaScript segunda parte</title>
+</head>
+<script>
+    //operadores
+    //aritmeticos
+    /*
+    let a = 2 + 2 - (10 * 2);
+    console.log(a);
+    let modulo = 5 % 2;
+    console.log(modulo);
+    */
+    //relacionales
+    // >,<,<=,>=,=,==,===,!=,!==
+    // = asignacion
+    // == comparacion de valores
+    // === comparacion de tipo de dato y valor
+    /*
+    console.log("7" === 7);
+    console.log(7 === 7);
+    console.log(0 === false);
+    */
+    //incremento  decremento
+    //let i = 2;
+    // i = i + 2;
+    //i *= 4;
+    //operador unario
+    /*
+    i++;
+    --i;
+    console.log(i--);
+    console.log(i);*/
+    //operadores logicos
+    //!-not
+    //|| - Or
+    // && -and
+    //console.log(!(7 === 7 || 0 === false))
+
+
+
+
+
+
+    //condicionales
+    //if else
+    let edad = 23;
+    /*
+    if (edad >= 18) {
+        console.log("eres mayor de edad");
+    } else {
+        console.log("eres menor de edad");
+    }*/
+    // if-else if-else//
+    /*
+    if (edad === 16) {
+        console.log("eres menor");
+    } else if (edad === 17) {
+        console.log("tu edad es 17")
+    } else if (edad === 18) {
+        console.log("ers mayor de edad");
+    } else {
+        console.log("noe existe el rango");
+    }*/
+    //operador ternario
+    //(condicion)? verdadero:falsa
+    /*let eresMayor = (edad >= 18) ? "eres mayor" : "eres menor";
+    console.log(eresMayor);*/
+
+    //switch - case
+    /*
+    let day = 9;
+
+    switch (day) {
+        case 0:
+            console.log("lunes");
+            break;
+        case 1:
+            console.log("martes");
+            break;
+        case 2:
+            console.log("Miercoles");
+            break;
+        case 3:
+            console.log("Jueves");
+            break;
+        case 4:
+            console.log("viernes");
+            break;
+        case 5:
+            console.log("sabado");
+            break;
+        case 6:
+            console.log("domingo");
+            break;
+        default:
+            console.log("no existe el dia");
+            break;
+
+
+    }
+    */
+    function factorial(numero) {
+        if (numero === 0) {
+            return 1;
+        } else {
+            return (factorial(numero - 1)) * (numero);
+        }
+    }
+    let a = 4;
+    console.log(factorial(4));
+</script>
+
+<body>
+
+</body>
+
+</html>

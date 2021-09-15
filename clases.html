@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="barra.css">
+    <title>my page</title>
+</head>
+<script>
+    class Animal {
+        constructor(nombre, genero) {
+            this.nombre = nombre;
+            this.genero = genero;
+        }
+
+        sonar() {
+            console.log("hola como estas");
+        }
+
+    }
+    class perro extends Animal {
+        constructor(nombre, genero, tamanio) {
+            super(nombre, genero);
+            this.tamanio = tamanio;
+            this.raza = null;
+
+        }
+        sonar() {
+            console.log("ladrido");
+        }
+        ladrar() {
+            console.log("gua gua");
+        }
+        static queeres() {
+            console.log("soy tu mejor amigo");
+        }
+
+        set setRaza(raza) {
+            this.raza = raza;
+        }
+        get getRaza() {
+            return this.raza;
+        }
+    }
+
+
+    class gato extends Animal {
+        constructor(nombre, genero, raza) {
+            super(nombre, genero);
+            this.raza = raza;
+
+        }
+        sonar() {
+            console.log("miau miau");
+        }
+        rascar() {
+            console.log("te voy a rascar");
+        }
+    }
+
+
+    const giru = new gato("Giru", "macho", "angorita");
+
+
+    const mandy = new Animal("gatita", "hembra");
+    pilla = new Animal("pilla", "macho");
+    const oso = new perro("oso", "macho", "grande");
+
+    console.log(mandy);
+    console.log(pilla);
+
+
+    mandy.sonar();
+    console.log(oso);
+    console.log(oso.getRaza);
+    oso.setRaza = "gran danes"
+    console.log(oso);
+    oso.sonar();
+    oso.ladrar();
+    console.log("funciona?");
+</script>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li>uno</li>
+                <li>dos</li>
+                <li>tres</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <img src="/poo.png" alt="jeje">
+
+    </section>
+
+    <footer>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis debitis ipsum at ad! Assumenda, quae neque .</p>
+    </footer>
+
+</body>
+
+</html>
